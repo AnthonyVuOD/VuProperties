@@ -1,0 +1,233 @@
+html {
+  height:100%;
+}
+body {
+  margin:0;
+  padding:0;
+  width: 100%;
+  height:100%;
+  font-family: Candara;
+  font-size: 20px;
+}
+#naviBar {
+  width:100%;
+  height: 40px;
+  position:fixed;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 11px 1px rgba(166,156,166,0.98);
+  -moz-box-shadow: 0px 4px 11px 1px rgba(166,156,166,0.98);
+  box-shadow: 0px 4px 11px 1px rgba(166,156,166,0.98);
+  margin:0;
+  z-index: 3;
+  padding:0;
+  opacity:.95;
+  overflow-x:scroll;
+}
+#vLogo {
+  width:50px;
+  height: auto;
+  margin-left:10px;
+}
+#naviBar>li {
+  list-style-type: none;
+  float:left;
+  margin:0;
+}
+#naviBar>li>a {
+  text-decoration: none;
+  font-size: 1em;
+  display: inline-block;
+  height:31px;
+  padding-top: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: copperplate;
+}
+#naviBar>li>a:visited, a:link {
+  color:black;
+}
+#naviBar>li>a:hover{
+  background-color: #E5EAEC;
+  text-decoration: underline;
+}
+#homePhoto {
+  width:100%;
+  position: relative;
+  z-index: -2;
+  margin-bottom:-5px;
+}
+#homePhotoP{
+  width:100%;
+}
+#homePhotoPMobile{
+  display:none;
+}
+#vuProp {
+  position: absolute;
+  font-family: copperplate;
+  bottom:-66px;
+  left: 12%;
+  color: #eee;
+  font-size: 2.75em;
+  z-index: 3;
+}
+#content{
+  float:left;
+  margin: 0;
+  padding:0;
+}
+.section {
+  float:left;
+  height:100%;
+  width:100%;
+  position:relative;
+  padding-bottom: 25px;
+  margin:0;
+}
+.innerSection {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+#about {
+  background-color: #eee;
+}
+#thangPic {
+  float:left;
+  width:48%;
+  border-radius: 4px;
+  transition: .25s;
+}
+#michaelPic {
+  float:left;
+  width:48%;
+  border-radius: 4px;
+  margin-left: 10px;
+  transition: .8s;
+}
+#experience {
+  background-color: #e3e0e0;
+}
+#knowlegePhoto {
+  width:100%;
+  transition: 2s;
+}
+#portfolio {
+  background-color: #bfbebe;
+}
+#portfolioImage {
+  width:100%;
+
+}
+#contact {
+  background-color: #878686;
+}
+.icons {
+  float:left;
+  width:18%;
+  height: auto;
+  margin: 10px 3.5% 10px 3.5%;
+}
+#phonePic{
+  transition: 1s;
+}
+#emailPic{
+  transition: 2s;
+}
+#mapPic{
+  transition: 3s;
+}
+#facebookPic{
+  transition: 4s;
+}
+a>img:hover {
+   -webkit-filter: brightness(70%);
+   filter: brightness(70%);
+   -webkit-transition: .5s;
+}
+h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.5em;
+}
+.innerSection>p {
+  font-size: .9em;
+}
+#footer {
+  width:100%;
+  height: 50px;
+  background-color: black;
+  position: relative;
+  clear: both;
+  bottom:-25px;
+  text-align: center;
+  padding-top: .50%;
+}
+#footer>p {
+  font-size: .75em;
+  color:white;
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (max-width:1000px) {
+  body {
+    font-size: 18px;
+  }
+  #vuProp {
+    bottom:-35px;
+    font-size: 1.75em;
+  }
+  .innerSection {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #naviBar>li>a {
+    height:31px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (max-width:600px) {
+  body {
+    font-size: 15px;
+  }
+  #naviBar>li>a {
+    font-size: .9em;
+    height:31px;
+    padding-top: 13px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+ #homePhotoP{
+    display:none;
+  }
+  #homePhotoPMobile{
+    width:100%;
+    display:block;
+  }
+  #vuProp {
+    bottom:-28px;
+    font-size: 1.75em;
+  }
+  .innerSection {
+    padding-left: 3%;
+    padding-right: 2%;
+  }
+  h2 {
+    padding-top: 0px;
+  }
+  #thangPic {
+    opacity:1;
+    width:48%;
+    border-radius: 4px;
+  }
+  #michaelPic {
+    opacity:1;
+    width:48%;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  #footer {
+    height: 40px;
+
+  }
+}
