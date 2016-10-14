@@ -25,7 +25,7 @@ function appear(){           /*Thang and Michael photo appear with scroll*/
   var ypos= window.pageYOffset;
   var thang = document.getElementById('thangPic');
   var mike = document.getElementById('michaelPic');
-    if(window.innerWidth > 1000){
+    if(window.innerWidth > 1025){
       if (ypos<(.7*document.body.clientHeight)){
         thang.style.opacity = "0"
         mike.style.opacity = "0"
@@ -43,8 +43,8 @@ window.addEventListener("scroll", appear);
 function appear2(){               /*Brain photo appear with scroll*/
   var ypos= window.pageYOffset;
   var brain = document.getElementById('knowlegePhoto');
-  if(window.innerWidth > 1000){
-    if (ypos<(1.5*document.documentElement.clientHeight)){
+  if(window.innerWidth > 1025){
+    if (ypos<(1.25*document.body.clientHeight)){
       brain.style.opacity = "0"
     } else {
       brain.style.opacity = "1"
@@ -59,8 +59,8 @@ function appear4(){                 /*Contact icons appear with scroll*/
   var ypos= window.pageYOffset;
   var icons = document.getElementsByClassName('icons');
   for (var i=0; i<icons.length; i++){
-    if(window.innerWidth > 1000){
-      if (ypos<(3.15*document.documentElement.clientHeight)){
+    if(window.innerWidth > 1025){
+      if (ypos<(2.75*document.body.clientHeight)){
         icons[i].style.opacity = "0"
       } else {
         icons[i].style.opacity = "1"

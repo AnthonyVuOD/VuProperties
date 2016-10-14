@@ -131,13 +131,13 @@ body {
   transition: 1s;
 }
 #emailPic{
-  transition: 2s;
+  transition: 1s;
 }
 #mapPic{
-  transition: 3s;
+  transition: 1s;
 }
 #facebookPic{
-  transition: 4s;
+  transition: 1s;
 }
 a>img:hover {
    -webkit-filter: brightness(70%);
@@ -191,7 +191,7 @@ h2 {
     font-size: 15px;
   }
   #naviBar>li>a {
-    font-size: .9em;
+    font-size: .8em;
     height:31px;
     padding-top: 13px;
     padding-left: 6px;
